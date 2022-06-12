@@ -1,0 +1,930 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.medicalaadharpharmacy.medicalaadharpharmacy"
+4    android:versionCode="6"
+5    android:versionName="6.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:5:5-81
+11-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+13-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:7:5-79
+13-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:8:5-67
+14-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:9:5-81
+15-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:10:5-79
+16-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+17-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:11:5-77
+17-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:11:22-74
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:12:5-65
+18-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:12:22-62
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+19-->[com.google.android.libraries.places:places:2.3.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\5c911ddb3644dd9711f84333580e2aaf\jetified-places-2.3.0\AndroidManifest.xml:10:5-76
+19-->[com.google.android.libraries.places:places:2.3.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\5c911ddb3644dd9711f84333580e2aaf\jetified-places-2.3.0\AndroidManifest.xml:10:22-73
+20    <permission
+20-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:7:5-9:47
+21        android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.permission.C2D_MESSAGE"
+21-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:8:9-63
+22        android:protectionLevel="signature" />
+22-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:9:9-44
+23
+24    <uses-permission android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.permission.C2D_MESSAGE" />
+24-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:11:5-79
+24-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:11:22-76
+25    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+25-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:17:5-82
+25-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:17:22-79
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:18:5-68
+26-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:18:22-65
+27    <!--
+28 Required so the device vibrates on receiving a push notification.
+29         Vibration settings of the device still apply.
+30    -->
+31    <uses-permission android:name="android.permission.VIBRATE" />
+31-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:23:5-66
+31-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:23:22-63
+32    <!--
+33 Use to restore notifications the user hasn't interacted with.
+34         They could be missed notifications if the user reboots their device if this isn't in place.
+35    -->
+36    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+36-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:29:5-81
+36-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:29:22-78
+37    <!-- Samsung -->
+38    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+38-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:31:5-86
+38-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:31:22-83
+39    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+39-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:32:5-87
+39-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:32:22-84
+40    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+40-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:33:5-81
+40-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:33:22-78
+41    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+41-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:34:5-83
+41-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:34:22-80
+42    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+42-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:35:5-88
+42-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:35:22-85
+43    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+43-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:36:5-92
+43-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:36:22-89
+44    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+44-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:37:5-84
+44-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:37:22-81
+45    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+45-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:38:5-83
+45-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:38:22-80
+46    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+46-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:39:5-91
+46-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:39:22-88
+47    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+47-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:40:5-92
+47-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:40:22-89
+48    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+48-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:41:5-93
+48-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:41:22-90
+49    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+49-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:42:5-73
+49-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:42:22-70
+50    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+50-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:43:5-82
+50-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:43:22-79
+51    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+51-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:44:5-83
+51-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:44:22-80
+52    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+52-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:45:5-88
+52-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:45:22-85
+53    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+53-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:46:5-89
+53-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:46:22-86
+54
+55    <uses-feature
+55-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\7dfc471bb7895bd3179d625100b7218f\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+56        android:glEsVersion="0x00020000"
+56-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\7dfc471bb7895bd3179d625100b7218f\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+57        android:required="true" />
+57-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\7dfc471bb7895bd3179d625100b7218f\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+58
+59    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+59-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:11:5-80
+59-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:11:22-77
+60    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+60-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:26:5-110
+60-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:26:22-107
+61
+62    <uses-feature
+62-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:12:5-14:36
+63        android:name="android.hardware.camera"
+63-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:13:9-47
+64        android:required="false" />
+64-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:14:9-33
+65    <uses-feature
+65-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:15:5-17:36
+66        android:name="android.hardware.camera.autofocus"
+66-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:16:9-57
+67        android:required="false" />
+67-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:17:9-33
+68
+69    <application
+69-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:14:5-85:19
+70        android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.MyApplication"
+70-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:15:9-85
+71        android:allowBackup="true"
+71-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:16:9-35
+72        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+72-->[androidx.core:core:1.3.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\980630e158f38ced2d00e440ae193d30\core-1.3.1\AndroidManifest.xml:24:18-86
+73        android:icon="@mipmap/logo"
+73-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:17:9-36
+74        android:label="@string/app_name"
+74-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:18:9-41
+75        android:roundIcon="@mipmap/logo"
+75-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:19:9-41
+76        android:supportsRtl="true"
+76-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:20:9-35
+77        android:theme="@style/AppTheme.NoActionBar"
+77-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:21:9-52
+78        android:usesCleartextTraffic="true" >
+78-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:22:9-44
+79        <activity
+79-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:23:9-25:39
+80            android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.PresCartActivity"
+80-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:24:13-95
+81            android:exported="true" />
+81-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:25:13-36
+82        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.ForgotActivity" />
+82-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:26:9-102
+82-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:26:19-99
+83        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.NotificationActivity" />
+83-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:27:9-108
+83-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:27:19-105
+84        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.ChanegPasswordActivity" />
+84-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:28:9-110
+84-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:28:19-107
+85        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.ChanegForgetPasswordActivity" />
+85-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:29:9-116
+85-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:29:19-113
+86        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.SearchActivity" />
+86-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:30:9-102
+86-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:30:19-99
+87        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.PrivacyPolicyActivity" />
+87-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:31:9-109
+87-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:31:19-106
+88        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.TramandconditionActivity" />
+88-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:32:9-112
+88-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:32:19-109
+89        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.ContactActivity" />
+89-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:33:9-103
+89-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:33:19-100
+90        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.AboutActivity" />
+90-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:34:9-101
+90-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:34:19-98
+91        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.PaytmChecksum" />
+91-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:35:9-101
+91-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:35:19-98
+92        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.UploadPrescriptionActivity" />
+92-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:36:9-114
+92-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:36:19-111
+93        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.CartUploadPrescriptionActivity" />
+93-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:37:9-118
+93-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:37:19-115
+94        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.locationpick.LocationGetActivity" />
+94-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:38:9-117
+94-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:38:19-114
+95        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.OrderDetailsActivity" />
+95-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:39:9-108
+95-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:39:19-105
+96        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.PrescriptionOrderDetailsActivity" />
+96-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:40:9-120
+96-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:40:19-117
+97        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.OrderActivity" />
+97-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:41:9-101
+97-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:41:19-98
+98        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.PrescriptionOrderActivity" />
+98-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:42:9-113
+98-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:42:19-110
+99        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.SettingActivity" />
+99-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:43:9-103
+99-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:43:19-100
+100        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.ProfileActivity" />
+100-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:44:9-103
+100-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:44:19-100
+101        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.EditProfileActivity" />
+101-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:45:9-107
+101-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:45:19-104
+102        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.LoginActivity" />
+102-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:46:9-101
+102-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:46:19-98
+103        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.SignupActivity" />
+103-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:47:9-102
+103-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:47:19-99
+104        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.VerifyPhoneActivity" />
+104-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:48:9-107
+104-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:48:19-104
+105        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.VerifyOTPActivity" />
+105-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:49:9-105
+105-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:49:19-102
+106        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.CompleOrderActivity" />
+106-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:50:9-107
+106-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:50:19-104
+107        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.PaymentOptionActivity" />
+107-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:51:9-109
+107-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:51:19-106
+108        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.CartActivity" />
+108-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:52:9-100
+108-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:52:19-97
+109        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.AddressActivity" />
+109-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:53:9-103
+109-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:53:19-100
+110        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.ProductDetailsActivity" />
+110-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:54:9-110
+110-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:54:19-107
+111        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.HomeActivity" />
+111-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:55:9-100
+111-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:55:19-97
+112        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.CoupunActivity" />
+112-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:56:9-102
+112-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:56:19-99
+113        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.RazerpayActivity" />
+113-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:57:9-104
+113-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:57:19-101
+114        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.PaypalActivity" />
+114-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:58:9-102
+114-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:58:19-99
+115        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.StripPaymentActivity" />
+115-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:59:9-108
+115-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:59:19-105
+116        <activity android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.IntroActivity" >
+116-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:60:9-67:20
+116-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:60:19-98
+117            <intent-filter>
+117-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:62:13-66:29
+118                <action android:name="android.intent.action.MAIN" />
+118-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:63:17-69
+118-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:63:25-66
+119
+120                <category android:name="android.intent.category.LAUNCHER" />
+120-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:65:17-77
+120-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:65:27-74
+121            </intent-filter>
+122        </activity>
+123        <activity
+123-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:68:9-70:47
+124            android:name="com.medicalaadharpharmacy.medicalaadharpharmacy.ui.ImagePreviewActivity"
+124-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:69:13-99
+125            android:theme="@style/AppTheme" />
+125-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:70:13-44
+126
+127        <meta-data
+127-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:72:9-74:47
+128            android:name="com.google.android.geo.API_KEY"
+128-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:73:13-58
+129            android:value="@string/api_key" />
+129-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:74:13-44
+130
+131        <provider
+132            android:name="androidx.core.content.FileProvider"
+132-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:77:13-62
+133            android:authorities="com.medicalaadharpharmacy.medicalaadharpharmacy.provider"
+133-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:78:13-60
+134            android:exported="false"
+134-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:79:13-37
+135            android:grantUriPermissions="true" >
+135-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:80:13-47
+136            <meta-data
+136-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:81:13-83:58
+137                android:name="android.support.FILE_PROVIDER_PATHS"
+137-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:82:17-67
+138                android:resource="@xml/provider_paths" />
+138-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:83:17-55
+139        </provider>
+140
+141        <activity
+141-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:12:9-14:57
+142            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+142-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:13:13-76
+143            android:theme="@style/StripeDefaultTheme" />
+143-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:14:13-54
+144        <activity
+144-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:15:9-17:57
+145            android:name="com.stripe.android.view.PaymentMethodsActivity"
+145-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:16:13-74
+146            android:theme="@style/StripeDefaultTheme" />
+146-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:17:13-54
+147        <activity
+147-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:18:9-20:57
+148            android:name="com.stripe.android.view.PaymentFlowActivity"
+148-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:19:13-71
+149            android:theme="@style/StripeDefaultTheme" />
+149-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:20:13-54
+150        <activity
+150-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:21:9-23:57
+151            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+151-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:22:13-78
+152            android:theme="@style/StripeDefaultTheme" />
+152-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:23:13-54
+153        <activity
+153-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:24:9-26:57
+154            android:name="com.stripe.android.view.PaymentRelayActivity"
+154-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:25:13-72
+155            android:theme="@style/StripeDefaultTheme" />
+155-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:26:13-54
+156        <activity
+156-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:27:9-29:57
+157            android:name="com.stripe.android.view.Stripe3ds2CompletionActivity"
+157-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:28:13-80
+158            android:theme="@style/StripeDefaultTheme" />
+158-->[com.stripe:stripe-android:14.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4a1682ded8b35004b2c10d24e8e17968\jetified-stripe-android-14.5.0\AndroidManifest.xml:29:13-54
+159        <activity
+159-->[com.stripe:stripe-3ds2-android:3.0.2] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\83db876d0f5bca461d7597b85282d0a0\jetified-stripe-3ds2-android-3.0.2\AndroidManifest.xml:12:9-14:54
+160            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+160-->[com.stripe:stripe-3ds2-android:3.0.2] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\83db876d0f5bca461d7597b85282d0a0\jetified-stripe-3ds2-android-3.0.2\AndroidManifest.xml:13:13-81
+161            android:theme="@style/Stripe3DS2Theme" />
+161-->[com.stripe:stripe-3ds2-android:3.0.2] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\83db876d0f5bca461d7597b85282d0a0\jetified-stripe-3ds2-android-3.0.2\AndroidManifest.xml:14:13-51
+162        <activity
+162-->[com.stripe:stripe-3ds2-android:3.0.2] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\83db876d0f5bca461d7597b85282d0a0\jetified-stripe-3ds2-android-3.0.2\AndroidManifest.xml:15:9-17:54
+163            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressDialogActivity"
+163-->[com.stripe:stripe-3ds2-android:3.0.2] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\83db876d0f5bca461d7597b85282d0a0\jetified-stripe-3ds2-android-3.0.2\AndroidManifest.xml:16:13-95
+164            android:theme="@style/Stripe3DS2Theme" />
+164-->[com.stripe:stripe-3ds2-android:3.0.2] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\83db876d0f5bca461d7597b85282d0a0\jetified-stripe-3ds2-android-3.0.2\AndroidManifest.xml:17:13-51
+165        <activity
+165-->[com.google.android.libraries.places:places:2.3.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\5c911ddb3644dd9711f84333580e2aaf\jetified-places-2.3.0\AndroidManifest.xml:14:9-20:20
+166            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+166-->[com.google.android.libraries.places:places:2.3.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\5c911ddb3644dd9711f84333580e2aaf\jetified-places-2.3.0\AndroidManifest.xml:15:13-91
+167            android:exported="false"
+167-->[com.google.android.libraries.places:places:2.3.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\5c911ddb3644dd9711f84333580e2aaf\jetified-places-2.3.0\AndroidManifest.xml:16:13-37
+168            android:label="@string/places_autocomplete_label"
+168-->[com.google.android.libraries.places:places:2.3.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\5c911ddb3644dd9711f84333580e2aaf\jetified-places-2.3.0\AndroidManifest.xml:17:13-62
+169            android:theme="@style/PlacesAutocompleteOverlay"
+169-->[com.google.android.libraries.places:places:2.3.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\5c911ddb3644dd9711f84333580e2aaf\jetified-places-2.3.0\AndroidManifest.xml:18:13-61
+170            android:windowSoftInputMode="adjustResize" >
+170-->[com.google.android.libraries.places:places:2.3.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\5c911ddb3644dd9711f84333580e2aaf\jetified-places-2.3.0\AndroidManifest.xml:19:13-55
+171        </activity>
+172
+173        <meta-data
+173-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:49:9-51:51
+174            android:name="onesignal_app_id"
+174-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:50:13-44
+175            android:value="eb2e6eb7-ca1b-4c43-9d96-0ee5833941f4" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+175-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:51:13-48
+176        <meta-data
+176-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:53:9-55:70
+177            android:name="onesignal_google_project_number"
+177-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:54:13-59
+178            android:value="str:REMOTE" />
+178-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:55:13-67
+179
+180        <receiver
+180-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:57:9-67:20
+181            android:name="com.onesignal.GcmBroadcastReceiver"
+181-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:58:13-62
+182            android:permission="com.google.android.c2dm.permission.SEND" >
+182-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:59:13-73
+183
+184            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+185            <intent-filter android:priority="999" >
+185-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:62:13-66:29
+185-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:62:28-50
+186                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+186-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:63:17-81
+186-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:63:25-78
+187
+188                <category android:name="com.medicalaadharpharmacy.medicalaadharpharmacy" />
+188-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:65:17-61
+188-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:65:27-58
+189            </intent-filter>
+190        </receiver>
+191        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+191-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:68:9-77
+191-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:68:19-74
+192
+193        <service
+193-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:70:9-76:19
+194            android:name="com.onesignal.HmsMessageServiceOneSignal"
+194-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:71:13-68
+195            android:exported="false" >
+195-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:72:13-37
+196            <intent-filter>
+196-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:73:13-75:29
+197                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+197-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:74:17-81
+197-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:74:25-78
+198            </intent-filter>
+199        </service>
+200
+201        <activity
+201-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:78:9-84:20
+202            android:name="com.onesignal.NotificationOpenedActivityHMS"
+202-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:79:13-71
+203            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+203-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:80:13-72
+204            <intent-filter>
+204-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:81:13-83:29
+205                <action android:name="android.intent.action.VIEW" />
+205-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:82:17-69
+205-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:82:25-66
+206            </intent-filter>
+207        </activity>
+208
+209        <service android:name="com.onesignal.GcmIntentService" />
+209-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:86:9-66
+209-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:86:18-63
+210        <service
+210-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:87:9-89:72
+211            android:name="com.onesignal.GcmIntentJobService"
+211-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:88:13-61
+212            android:permission="android.permission.BIND_JOB_SERVICE" />
+212-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:89:13-69
+213        <service
+213-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:90:9-92:72
+214            android:name="com.onesignal.RestoreJobService"
+214-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:91:13-59
+215            android:permission="android.permission.BIND_JOB_SERVICE" />
+215-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:92:13-69
+216        <service
+216-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:93:9-95:72
+217            android:name="com.onesignal.RestoreKickoffJobService"
+217-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:94:13-66
+218            android:permission="android.permission.BIND_JOB_SERVICE" />
+218-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:95:13-69
+219        <service
+219-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:96:9-98:43
+220            android:name="com.onesignal.SyncService"
+220-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:97:13-53
+221            android:stopWithTask="true" />
+221-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:98:13-40
+222        <service
+222-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:99:9-101:72
+223            android:name="com.onesignal.SyncJobService"
+223-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:100:13-56
+224            android:permission="android.permission.BIND_JOB_SERVICE" />
+224-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:101:13-69
+225
+226        <activity
+226-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:103:9-105:75
+227            android:name="com.onesignal.PermissionsActivity"
+227-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:104:13-61
+228            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+228-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:105:13-72
+229
+230        <service android:name="com.onesignal.NotificationRestoreService" />
+230-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:107:9-76
+230-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:107:18-73
+231
+232        <receiver android:name="com.onesignal.BootUpReceiver" >
+232-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:109:9-114:20
+232-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:109:19-62
+233            <intent-filter>
+233-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:110:13-113:29
+234                <action android:name="android.intent.action.BOOT_COMPLETED" />
+234-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:111:17-79
+234-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:111:25-76
+235                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+235-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:112:17-82
+235-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:112:25-79
+236            </intent-filter>
+237        </receiver>
+238        <receiver android:name="com.onesignal.UpgradeReceiver" >
+238-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:115:9-119:20
+238-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:115:19-63
+239            <intent-filter>
+239-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:116:13-118:29
+240                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+240-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:117:17-84
+240-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:117:25-81
+241            </intent-filter>
+242        </receiver> <!-- Needs to be explicitly declared on P+ -->
+243        <uses-library
+243-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\7dfc471bb7895bd3179d625100b7218f\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+244            android:name="org.apache.http.legacy"
+244-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\7dfc471bb7895bd3179d625100b7218f\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+245            android:required="false" />
+245-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\7dfc471bb7895bd3179d625100b7218f\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+246
+247        <activity
+247-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:14:9-17:47
+248            android:name="com.paytm.pgsdk.PaytmPGActivity"
+248-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:15:13-59
+249            android:screenOrientation="portrait"
+249-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:16:13-49
+250            android:theme="@style/AppTheme" />
+250-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:17:13-44
+251
+252        <service
+252-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:19:9-21:40
+253            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+253-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:20:13-73
+254            android:exported="false" />
+254-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:21:13-37
+255        <service
+255-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:22:9-24:40
+256            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+256-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:23:13-72
+257            android:exported="false" />
+257-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:24:13-37
+258        <service
+258-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:25:9-28:39
+259            android:name="com.paytm.pgsdk.easypay.utils.EasypayLoaderService"
+259-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:26:13-78
+260            android:enabled="true"
+260-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:27:13-35
+261            android:exported="true" />
+261-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:28:13-36
+262        <service
+262-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:29:9-32:39
+263            android:name="com.paytm.pgsdk.easypay.utils.AnalyticsService"
+263-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:30:13-74
+264            android:enabled="true"
+264-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:31:13-35
+265            android:exported="true" />
+265-->[com.paytm:pgplussdk:1.4.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\e5b62bdebdd0e5cc5f0437c93715ccc5\jetified-pgplussdk-1.4.4\AndroidManifest.xml:32:13-36
+266
+267        <activity
+267-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:27:9-44:20
+268            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+268-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:28:13-80
+269            android:excludeFromRecents="true"
+269-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:29:13-46
+270            android:exported="true"
+270-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:30:13-36
+271            android:launchMode="singleTask"
+271-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:31:13-44
+272            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+272-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:32:13-72
+273            <intent-filter>
+273-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:33:13-43:29
+274                <action android:name="android.intent.action.VIEW" />
+274-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:82:17-69
+274-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:82:25-66
+275
+276                <category android:name="android.intent.category.DEFAULT" />
+276-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:17-76
+276-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:27-73
+277                <category android:name="android.intent.category.BROWSABLE" />
+277-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:17-78
+277-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:27-75
+278
+279                <data
+279-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:39:17-42:51
+280                    android:host="firebase.auth"
+280-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:40:21-49
+281                    android:path="/"
+281-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:41:21-37
+282                    android:scheme="genericidp" />
+282-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:42:21-48
+283            </intent-filter>
+284        </activity>
+285        <activity
+285-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:45:9-62:20
+286            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+286-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:46:13-79
+287            android:excludeFromRecents="true"
+287-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:47:13-46
+288            android:exported="true"
+288-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:48:13-36
+289            android:launchMode="singleTask"
+289-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:49:13-44
+290            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+290-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:50:13-72
+291            <intent-filter>
+291-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:51:13-61:29
+292                <action android:name="android.intent.action.VIEW" />
+292-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:82:17-69
+292-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:82:25-66
+293
+294                <category android:name="android.intent.category.DEFAULT" />
+294-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:17-76
+294-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:27-73
+295                <category android:name="android.intent.category.BROWSABLE" />
+295-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:17-78
+295-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:37:27-75
+296
+297                <data
+297-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:39:17-42:51
+298                    android:host="firebase.auth"
+298-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:40:21-49
+299                    android:path="/"
+299-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:41:21-37
+300                    android:scheme="recaptcha" />
+300-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:42:21-48
+301            </intent-filter>
+302        </activity>
+303
+304        <service
+304-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:64:9-73:19
+305            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+305-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:65:13-101
+306            android:enabled="true"
+306-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:66:13-35
+307            android:exported="false" >
+307-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:67:13-37
+308            <intent-filter>
+308-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:68:13-72:29
+309                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+309-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:69:17-89
+309-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:69:25-86
+310
+311                <category android:name="android.intent.category.DEFAULT" />
+311-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:17-76
+311-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:36:27-73
+312            </intent-filter>
+313        </service>
+314        <service
+314-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:74:9-80:19
+315            android:name="com.google.firebase.components.ComponentDiscoveryService"
+315-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:75:13-84
+316            android:directBootAware="true"
+316-->[com.google.firebase:firebase-common:19.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\061e9ae007084b699dc388b09c69e6af\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+317            android:exported="false" >
+317-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:76:13-37
+318            <meta-data
+318-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:77:13-79:85
+319                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+319-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:78:17-109
+320                android:value="com.google.firebase.components.ComponentRegistrar" />
+320-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:79:17-82
+321            <meta-data
+321-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:52:13-54:85
+322                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+322-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:53:17-119
+323                android:value="com.google.firebase.components.ComponentRegistrar" />
+323-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:54:17-82
+324            <meta-data
+324-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\35f10b9aa3282e0c4ce3ae644ab33b75\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:30:13-32:85
+325                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+325-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\35f10b9aa3282e0c4ce3ae644ab33b75\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:31:17-139
+326                android:value="com.google.firebase.components.ComponentRegistrar" />
+326-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\35f10b9aa3282e0c4ce3ae644ab33b75\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:32:17-82
+327            <meta-data
+327-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\d23b683e8631fb7d6b99cc9f7a91108a\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
+328                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+328-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\d23b683e8631fb7d6b99cc9f7a91108a\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
+329                android:value="com.google.firebase.components.ComponentRegistrar" />
+329-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\d23b683e8631fb7d6b99cc9f7a91108a\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
+330            <meta-data
+330-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\c2efc480cd53679e60ff8c024cb0733c\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+331                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+331-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\c2efc480cd53679e60ff8c024cb0733c\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+332                android:value="com.google.firebase.components.ComponentRegistrar" />
+332-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\c2efc480cd53679e60ff8c024cb0733c\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+333            <meta-data
+333-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\93f461583c36ddb69e936ad5d17bcd5d\jetified-firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+334                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+334-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\93f461583c36ddb69e936ad5d17bcd5d\jetified-firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+335                android:value="com.google.firebase.components.ComponentRegistrar" />
+335-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\93f461583c36ddb69e936ad5d17bcd5d\jetified-firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+336            <!--
+337                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+338                clients to use it as well, by defining this registrar in their own core/common library.
+339            -->
+340            <meta-data
+340-->[com.google.firebase:firebase-common:19.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\061e9ae007084b699dc388b09c69e6af\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+341                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+341-->[com.google.firebase:firebase-common:19.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\061e9ae007084b699dc388b09c69e6af\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+342                android:value="com.google.firebase.components.ComponentRegistrar" />
+342-->[com.google.firebase:firebase-common:19.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\061e9ae007084b699dc388b09c69e6af\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+343        </service>
+344
+345        <receiver
+345-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:28:9-35:20
+346            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+346-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:29:13-78
+347            android:exported="true"
+347-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:30:13-36
+348            android:permission="com.google.android.c2dm.permission.SEND" >
+348-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:31:13-73
+349            <intent-filter>
+349-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:32:13-34:29
+350                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+350-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:63:17-81
+350-->[com.onesignal:OneSignal:3.15.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\8ce0e0dcee149a8bce4bd1b397b15b35\jetified-OneSignal-3.15.3\AndroidManifest.xml:63:25-78
+351            </intent-filter>
+352        </receiver>
+353        <!--
+354             FirebaseMessagingService performs security checks at runtime,
+355             but set to not exported to explicitly avoid allowing another app to call it.
+356        -->
+357        <service
+357-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:41:9-48:19
+358            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+358-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:42:13-82
+359            android:directBootAware="true"
+359-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:43:13-43
+360            android:exported="false" >
+360-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:44:13-37
+361            <intent-filter android:priority="-500" >
+361-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:45:13-47:29
+361-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:45:28-51
+362                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+362-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:46:17-78
+362-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\81801fe9ca365b6d160afe71d2eda374\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:46:25-75
+363            </intent-filter>
+364        </service>
+365
+366        <provider
+366-->[com.squareup.picasso:picasso:2.71828] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\45e702276b83e8cf0864fe07ac0f16c2\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+367            android:name="com.squareup.picasso.PicassoProvider"
+367-->[com.squareup.picasso:picasso:2.71828] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\45e702276b83e8cf0864fe07ac0f16c2\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+368            android:authorities="com.medicalaadharpharmacy.medicalaadharpharmacy.com.squareup.picasso"
+368-->[com.squareup.picasso:picasso:2.71828] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\45e702276b83e8cf0864fe07ac0f16c2\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+369            android:exported="false" />
+369-->[com.squareup.picasso:picasso:2.71828] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\45e702276b83e8cf0864fe07ac0f16c2\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+370
+371        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+371-->[com.razorpay:checkout:1.5.13] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\354d5a9ddaf7051f2a9df6aa73661349\jetified-checkout-1.5.13\AndroidManifest.xml:12:9-16:20
+371-->[com.razorpay:checkout:1.5.13] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\354d5a9ddaf7051f2a9df6aa73661349\jetified-checkout-1.5.13\AndroidManifest.xml:12:19-63
+372            <intent-filter>
+372-->[com.razorpay:checkout:1.5.13] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\354d5a9ddaf7051f2a9df6aa73661349\jetified-checkout-1.5.13\AndroidManifest.xml:13:13-15:29
+373                <action android:name="rzp.device_token.share" />
+373-->[com.razorpay:checkout:1.5.13] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\354d5a9ddaf7051f2a9df6aa73661349\jetified-checkout-1.5.13\AndroidManifest.xml:14:17-65
+373-->[com.razorpay:checkout:1.5.13] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\354d5a9ddaf7051f2a9df6aa73661349\jetified-checkout-1.5.13\AndroidManifest.xml:14:25-62
+374            </intent-filter>
+375        </receiver>
+376
+377        <activity
+377-->[com.razorpay:checkout:1.5.13] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\354d5a9ddaf7051f2a9df6aa73661349\jetified-checkout-1.5.13\AndroidManifest.xml:18:9-29:20
+378            android:name="com.razorpay.CheckoutActivity"
+378-->[com.razorpay:checkout:1.5.13] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\354d5a9ddaf7051f2a9df6aa73661349\jetified-checkout-1.5.13\AndroidManifest.xml:19:13-57
+379            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+379-->[com.razorpay:checkout:1.5.13] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\354d5a9ddaf7051f2a9df6aa73661349\jetified-checkout-1.5.13\AndroidManifest.xml:20:13-83
+380            android:theme="@style/CheckoutTheme" >
+380-->[com.razorpay:checkout:1.5.13] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\354d5a9ddaf7051f2a9df6aa73661349\jetified-checkout-1.5.13\AndroidManifest.xml:21:13-49
+381            <intent-filter>
+381-->[com.razorpay:checkout:1.5.13] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\354d5a9ddaf7051f2a9df6aa73661349\jetified-checkout-1.5.13\AndroidManifest.xml:22:13-28:29
+382                <action android:name="android.intent.action.MAIN" />
+382-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:63:17-69
+382-->D:\Medical Aadhar\Medical Aadhar\app\src\main\AndroidManifest.xml:63:25-66
+383
+384                <data
+384-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:39:17-42:51
+385                    android:host="rzp.io"
+385-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:40:21-49
+386                    android:scheme="io.rzp" />
+386-->[com.google.firebase:firebase-auth:20.0.4] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\751d9d61106efc01bb6ea2ab081a0b5b\jetified-firebase-auth-20.0.4\AndroidManifest.xml:42:21-48
+387            </intent-filter>
+388        </activity>
+389        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+389-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:9-84
+389-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:19-81
+390        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+390-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:9-90
+390-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:19-87
+391        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+391-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:9-91
+391-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:19-88
+392        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+392-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:9-82
+392-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:19-79
+393        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+393-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:9-96
+393-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:19-93
+394        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+394-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:9-97
+394-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:19-94
+395        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+395-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:9-94
+395-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:19-91
+396        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+396-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:9-97
+396-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:19-94
+397        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+397-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:9-98
+397-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:19-95
+398
+399        <service
+399-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:23:9-25:40
+400            android:name="com.paypal.android.sdk.payments.PayPalService"
+400-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:24:13-73
+401            android:exported="false" />
+401-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\cd62d1743457f7f406d278c2dddb7368\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:25:13-37
+402
+403        <activity
+403-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+404            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+404-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+405            android:exported="false"
+405-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+406            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+406-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+407
+408        <receiver
+408-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:29:9-33:20
+409            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+409-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:30:13-85
+410            android:enabled="true"
+410-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:31:13-35
+411            android:exported="false" >
+411-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:32:13-37
+412        </receiver>
+413
+414        <service
+414-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:35:9-38:40
+415            android:name="com.google.android.gms.measurement.AppMeasurementService"
+415-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:36:13-84
+416            android:enabled="true"
+416-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:37:13-35
+417            android:exported="false" />
+417-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:38:13-37
+418        <service
+418-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:39:9-43:72
+419            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+419-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:40:13-87
+420            android:enabled="true"
+420-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:41:13-35
+421            android:exported="false"
+421-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:42:13-37
+422            android:permission="android.permission.BIND_JOB_SERVICE" />
+422-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:43:13-69
+423
+424        <provider
+424-->[com.google.firebase:firebase-common:19.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\061e9ae007084b699dc388b09c69e6af\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+425            android:name="com.google.firebase.provider.FirebaseInitProvider"
+425-->[com.google.firebase:firebase-common:19.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\061e9ae007084b699dc388b09c69e6af\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+426            android:authorities="com.medicalaadharpharmacy.medicalaadharpharmacy.firebaseinitprovider"
+426-->[com.google.firebase:firebase-common:19.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\061e9ae007084b699dc388b09c69e6af\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+427            android:directBootAware="true"
+427-->[com.google.firebase:firebase-common:19.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\061e9ae007084b699dc388b09c69e6af\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+428            android:exported="false"
+428-->[com.google.firebase:firebase-common:19.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\061e9ae007084b699dc388b09c69e6af\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+429            android:initOrder="100" />
+429-->[com.google.firebase:firebase-common:19.5.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\061e9ae007084b699dc388b09c69e6af\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+430
+431        <meta-data
+431-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\0df5b63dbb3e75e07d7d54326f09a5fb\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+432            android:name="com.google.android.gms.version"
+432-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\0df5b63dbb3e75e07d7d54326f09a5fb\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+433            android:value="@integer/google_play_services_version" />
+433-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\0df5b63dbb3e75e07d7d54326f09a5fb\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+434
+435        <service
+435-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\0ef693d6f6f7cca2260e4a4c54d0baee\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+436            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+436-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\0ef693d6f6f7cca2260e4a4c54d0baee\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+437            android:exported="false" >
+437-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\0ef693d6f6f7cca2260e4a4c54d0baee\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+438            <meta-data
+438-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\0ef693d6f6f7cca2260e4a4c54d0baee\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+439                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+439-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\0ef693d6f6f7cca2260e4a4c54d0baee\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+440                android:value="cct" />
+440-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\0ef693d6f6f7cca2260e4a4c54d0baee\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+441        </service>
+442
+443        <provider
+443-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\eb86d70faba0f24fa8225d854e9aff80\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+444            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+444-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\eb86d70faba0f24fa8225d854e9aff80\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+445            android:authorities="com.medicalaadharpharmacy.medicalaadharpharmacy.lifecycle-process"
+445-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\eb86d70faba0f24fa8225d854e9aff80\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+446            android:exported="false"
+446-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\eb86d70faba0f24fa8225d854e9aff80\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+447            android:multiprocess="true" />
+447-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\eb86d70faba0f24fa8225d854e9aff80\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+448
+449        <service
+449-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4c41b342d6d7d7f40736d864e2a9b970\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+450            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+450-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4c41b342d6d7d7f40736d864e2a9b970\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+451            android:exported="false"
+451-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4c41b342d6d7d7f40736d864e2a9b970\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+452            android:permission="android.permission.BIND_JOB_SERVICE" >
+452-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4c41b342d6d7d7f40736d864e2a9b970\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+453        </service>
+454
+455        <receiver
+455-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4c41b342d6d7d7f40736d864e2a9b970\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+456            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+456-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4c41b342d6d7d7f40736d864e2a9b970\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+457            android:exported="false" />
+457-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\4c41b342d6d7d7f40736d864e2a9b970\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+458
+459        <activity
+459-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:20:9-22:66
+460            android:name="io.card.payment.CardIOActivity"
+460-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:21:13-58
+461            android:configChanges="keyboardHidden|orientation" />
+461-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:22:13-63
+462        <activity android:name="io.card.payment.DataEntryActivity" />
+462-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:9-70
+462-->[io.card:android-sdk:5.5.1] C:\Users\uttka\.gradle\caches\transforms-2\files-2.1\91fb6f235bdb4a296489481dbf3cdbba\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:19-67
+463    </application>
+464
+465</manifest>

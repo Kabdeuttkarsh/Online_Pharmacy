@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Medical Aadhar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="uptitel" translatable="false">Upload Prescription</string>
+    <string name="api_key" translatable="false">AIzaSyAzho_58QUuAG0EGR2OvQ8HXihT4zutN3Q</string>
+    <string
+        name="messageWithLink">
+        <a href="https://www.solutionstouch.com/">Design &amp; Develop by <b> SOLUTIONS TOUCH </b></a></string>
+
+</resources>

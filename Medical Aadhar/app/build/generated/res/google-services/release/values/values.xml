@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1006573881665-j3haedkg5gn779da99u9rqjo8qs9p9ct.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1006573881665</string>
+    <string name="google_api_key" translatable="false">AIzaSyBhg-MFRTsrMhoN5yYhZwifZZHo33z2Pvs</string>
+    <string name="google_app_id" translatable="false">1:1006573881665:android:223841e0ffe754777539c0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBhg-MFRTsrMhoN5yYhZwifZZHo33z2Pvs</string>
+    <string name="google_storage_bucket" translatable="false">medical-aadhar.appspot.com</string>
+    <string name="project_id" translatable="false">medical-aadhar</string>
+</resources>

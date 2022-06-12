@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1006573881665",
+    "project_id": "medical-aadhar",
+    "storage_bucket": "medical-aadhar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006573881665:android:223841e0ffe754777539c0",
+        "android_client_info": {
+          "package_name": "com.medicalaadharpharmacy.medicalaadharpharmacy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006573881665-j3haedkg5gn779da99u9rqjo8qs9p9ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhg-MFRTsrMhoN5yYhZwifZZHo33z2Pvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006573881665-j3haedkg5gn779da99u9rqjo8qs9p9ct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
